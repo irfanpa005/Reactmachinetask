@@ -1,5 +1,5 @@
 import React from 'react'
-import './sidenavbar.css'
+import styles from './sidenavbar.module.css'
 import briefcase from '../assets/Briefcase.png'
 import shutdown from '../assets/Shutdown.png'
 import circlemenu from '../assets/Circled Menu.png'
@@ -9,12 +9,12 @@ import help from '../assets/Help.png'
 
 function SideNavbar() {
   return (
-    <div className='sideNavContainer'>
-      <div className='brfCaseImgContainer'>
-        <img src={briefcase} className='brfCaseImg' />
-        <h3>STATBOARD</h3>
+    <div className={styles.sideNavContainer}>
+      <div className={styles.brfCaseImgContainer}>
+        <img src={briefcase} className={styles.brfCaseImg} />
+        <h5>STATBOARD</h5>
       </div>
-      <div className='sideNavButtons'>
+      <div className={styles.sideNavButtons}>
         <ul>
             <li>
                 <img src={circlemenu}></img>
@@ -34,9 +34,9 @@ function SideNavbar() {
             </li>
         </ul>
       </div>
-      <div className='logout'>
-        <h4>Logout</h4>
-        <img src={shutdown} className='shutdownImg' />
+      <div className={styles.logout}>
+        <p>Logout</p>
+        <img src={shutdown} />
       </div>
     </div>
   )
