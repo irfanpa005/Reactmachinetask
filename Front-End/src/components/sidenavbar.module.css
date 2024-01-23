@@ -1,14 +1,18 @@
 .sideNavContainer{
     background-color: rgb(49, 37, 65);
-    min-width: fit-content;
-    max-width: 18%;
-    min-height: 100dvh;
+    /* min-width: fit-content; */
+    width: 12rem;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: white;
     overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 }
 
 h3,h4{

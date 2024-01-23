@@ -4,6 +4,7 @@ import TopNavbar from '../components/TopNavbar'
 import Graph from '../components/Graph'
 import styles from './dashboard.module.css'
 import Pie from '../components/Pie'
+import Profile from '../components/Profile'
 
 function Dashboard() {
   return (
@@ -26,11 +27,11 @@ function Dashboard() {
           </div>
           <br></br>
           <div className='row'>
-            <div className={`${styles.graphCol} col-md-7 col-12`}>
+            <div className={`${styles.graphCol} col-md-8 col-12`}>
               <Graph />
             </div>
-            <div className={`${styles.pieCol} col-md-4 col-12`}>
-             <Pie />
+            <div className={`${styles.profCol} col-md-3 col-12`}>
+             <Profile />
             </div>
           </div>
 
