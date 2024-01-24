@@ -28,4 +28,13 @@
   .profCol{
     width: 100%;
     margin: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 650px) {
+    .mainContent {
+      margin-left: 0rem;
+    }
   }

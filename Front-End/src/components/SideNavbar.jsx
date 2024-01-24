@@ -8,6 +8,7 @@ import puzzle from '../assets/Puzzle.png'
 import help from '../assets/Help.png'
 
 function SideNavbar() {
+
   return (
     <div className={styles.sideNavContainer}>
       <div className={styles.brfCaseImgContainer}>

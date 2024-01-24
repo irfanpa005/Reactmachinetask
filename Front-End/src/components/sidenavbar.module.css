@@ -95,3 +95,9 @@ h3,h4{
     padding: 0; 
 
   }
+
+  @media screen and (max-width: 650px) {
+    .sideNavContainer{
+        width: 100%;
+    }
+}

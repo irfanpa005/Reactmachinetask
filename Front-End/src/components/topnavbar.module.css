@@ -6,6 +6,11 @@
     background-color: transparent;
 }
 
+.navIcon{
+    display: none;
+}
+
+
 .userDetails{
     display: flex;
     padding: 10px 6px;
@@ -23,3 +28,20 @@
 .userDetails img{
     margin-left: 4px;
 }
+
+@media screen and (max-width: 650px) {
+    .mainContent {
+      margin-left: 0rem;
+    }
+
+    .navIcon{
+        display: block;
+        z-index: 6;
+    }
+
+    .navIcon:hover{
+        cursor: pointer;
+    }
+    
+    
+  }
