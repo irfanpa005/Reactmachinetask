@@ -4,7 +4,7 @@ import { PieChart, Pie, Sector, Cell, Legend, ResponsiveContainer } from 'rechar
 import axios from "axios";
 
 function PieComponent() {
-const [datas, setDatas] = useState([]);
+const [pieDatas, setPieDatas] = useState([]);
 
 const COLORS = ['#3bbf5e', '#63d481', '#9dcfaa', '#c5decc', '#509481'];
 
@@ -24,8 +24,7 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_BASE_URL}/api/pie-chart`).then((response) => {
-      setDatas(response.data);
-      console.log(response.data);
+      setPieDatas(response.data);
     });
   }, []);
 
@@ -33,9 +32,9 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
   return (
     <div className={styles.pieContainer}>
       <ResponsiveContainer width="100%" height="100%">
-        { datas && <PieChart width={400} height={400}>
+        { pieDatas && <PieChart width={400} height={400}>
           <Pie
-            data={datas}
+            data={pieDatas}
             cx="50%"
             cy="50%"
             labelLine={false}
@@ -43,7 +42,7 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
             outerRadius={80}
             dataKey="value"
           >
-            {datas.map((entry, index) => (
+            {pieDatas.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
 

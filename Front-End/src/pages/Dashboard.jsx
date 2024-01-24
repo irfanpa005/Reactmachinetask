@@ -5,6 +5,7 @@ import Graph from '../components/Graph'
 import styles from './dashboard.module.css'
 import PieComponent from '../components/PieComponent'
 import Profile from '../components/Profile'
+import Tabledata from '../components/Tabledata'
 
 function Dashboard() {
 
@@ -35,8 +36,8 @@ function Dashboard() {
           </div>
           <br></br>
           <div className='row'>
-            <div className={`${styles.graphCol} col-md-8 col-12`}>
-              <Graph />
+            <div className={`${styles.tableCol} col-md-8 col-12`}>
+              <Tabledata />
             </div>
             <div className={`${styles.profCol} col-md-3 col-12`}>
              <Profile />
