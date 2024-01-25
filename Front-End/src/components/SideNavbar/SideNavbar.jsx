@@ -6,6 +6,7 @@ import circlemenu from '../../assets/Circled Menu.png'
 import support from '../../assets/Support.png'
 import puzzle from '../../assets/Puzzle.png'
 import help from '../../assets/Help.png'
+import statboard from '../../assets/StatBoard.png'
 
 function SideNavbar() {
 
@@ -13,7 +14,7 @@ function SideNavbar() {
     <div className={styles.sideNavContainer}>
       <div className={styles.brfCaseImgContainer}>
         <img src={briefcase} className={styles.brfCaseImg} />
-        <h5>STATBOARD</h5>
+        <img src={statboard} className={styles.brfCaseImg} />
       </div>
       <div className={styles.sideNavButtons}>
         <ul>

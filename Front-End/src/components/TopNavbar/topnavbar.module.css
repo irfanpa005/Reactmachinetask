@@ -8,10 +8,6 @@
     z-index: 6;
 }
 
-.navIcon{
-    display: none;
-    z-index: 6;
-}
 
 .goodMorning{
     font-size: 1.3rem;
@@ -49,16 +45,11 @@
     .goodMorning{
         font-size: 1rem;
     }
+
+    .topNavbarContainer{
+        padding-left: 3rem;
+    }
     
-
-    .navIcon{
-        display: block;
-        z-index: 6;
-    }
-
-    .navIcon:hover{
-        cursor: pointer;
-    }
     
     
   }

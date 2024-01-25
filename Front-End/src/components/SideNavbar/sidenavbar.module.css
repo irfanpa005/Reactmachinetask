@@ -43,14 +43,14 @@ h3,h4{
     display:flex;
     align-items: center;
     justify-content: start;
-    vertical-align: middle;
     background-color: rgb(45, 43, 43);
-    margin: 10px 2px;
-    padding-left: max(30px,3vw);
+    vertical-align: middle;
+    padding-left: max(30px,2vw);
     width: 100%;
     border-radius: 15px;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 12px;
 }
 
 .sideNavButtons li p,.sideNavButtons li img{
@@ -64,18 +64,6 @@ h3,h4{
     margin-right: 15px;
 }
 
-.sideNavButtons li{
-    display:flex;
-    align-items: center;
-    justify-content: start;
-    vertical-align: middle;
-    background-color: rgb(45, 43, 43);
-    margin: 10px 2px;
-    padding-left: max(30px,3vw);
-    width: 100%;
-    border-radius: 15px;
-}
-
 .sideNavButtons li:hover{
     cursor: pointer;
 }
@@ -85,24 +73,34 @@ h3,h4{
     font-size: 1rem;
     padding: 10px 0px;
     background-color: white;
-    color: rgb(208, 56, 56);
+    color: rgb(234, 86, 86);
     width: 100%;
-    font-weight: 800;
+    font-weight: 600;
     display: flex;
     justify-content: center;
-    vertical-align: middle;
     align-items: center;
   }
   
-  .logout p,
-  .logout img {
-    margin: 0;
-    padding: 0; 
-
+  .logout p {
+    padding: 0;
+    margin: 2px;
   }
+
 
   @media screen and (max-width: 650px) {
     .sideNavContainer{
         width: 100%;
+    }
+
+    .sideNavButtons ul{
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        margin-left: 0vw;
+    }
+    
+
+    .sideNavButtons li{
+        justify-content: start;
     }
 }

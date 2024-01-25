@@ -6,6 +6,8 @@ import styles from './dashboard.module.css'
 import PieComponent from '../components/PieChart/PieComponent'
 import Profile from '../components/Profile/Profile'
 import Tabledata from '../components/Table/Tabledata'
+import NavIcon from '../assets/NavIcon'
+import NavIconW from '../assets/NavIconW'
 
 function Dashboard() {
 
@@ -15,8 +17,13 @@ function Dashboard() {
       window.innerWidth < 650 ? setIsSideBarOpen(false) : setIsSideBarOpen(true);
   }, []);
 
+  const toggleSidebar = () => {
+    setIsSideBarOpen(!isSideBarOpen);
+  }
+
   return (
     <div className={styles.mainPage}>
+      <div className={styles.navIcon} onClick={toggleSidebar}> {isSideBarOpen ? <NavIconW /> : <NavIcon /> } </div>
       {isSideBarOpen &&
       <div className={styles.SideNavbar}>
         <SideNavbar />
