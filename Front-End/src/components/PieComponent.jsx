@@ -49,7 +49,6 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
           <Legend
               verticalAlign="bottom"
               layout='vertical'
-              height={72}
               align='center'
               formatter={(value, entry, index) => (
                   <span style={{ color: 'black', fontSize: '15px'}}>
