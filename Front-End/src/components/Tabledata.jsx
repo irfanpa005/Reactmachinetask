@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import styles from "./table.module.css";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
+import { BaseUrl } from "../services";
 
 function Tabledata() {
   const [tableDatas, setTableDatas] = useState([]);
   const [paginationModel, setPaginationModel] = useState({ pageSize: 4, page: 0 })
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/table').then((response) => {
+    axios.get(`${BaseUrl}/api/table`).then((response) => {
       setTableDatas(response.data);
     });
   }, []);

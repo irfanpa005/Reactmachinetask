@@ -11,12 +11,13 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import axios from "axios";
+import { BaseUrl } from "../services";
 
 function Graph() {
   const [datas, setDatas] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/graph').then((response) => {
+    axios.get(`${BaseUrl}/api/graph`).then((response) => {
       setDatas(response.data);
     });
   }, []);

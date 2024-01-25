@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './pie.module.css'
 import { PieChart, Pie, Sector, Cell, Legend, ResponsiveContainer } from 'recharts';
 import axios from "axios";
+import { BaseUrl } from '../services';
 
 function PieComponent() {
 const [pieDatas, setPieDatas] = useState([]);
@@ -23,7 +24,7 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/pie-chart').then((response) => {
+    axios.get(`${BaseUrl}/api/pie-chart`).then((response) => {
       setPieDatas(response.data);
     });
   }, []);
