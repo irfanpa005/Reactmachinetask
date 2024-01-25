@@ -16,7 +16,7 @@ function Graph() {
   const [datas, setDatas] = useState([]);
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BASE_URL}/api/graph`).then((response) => {
+    axios.get('http://localhost:3001/api/graph').then((response) => {
       setDatas(response.data);
     });
   }, []);

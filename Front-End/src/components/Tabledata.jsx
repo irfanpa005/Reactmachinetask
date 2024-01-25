@@ -8,7 +8,7 @@ function Tabledata() {
   const [paginationModel, setPaginationModel] = useState({ pageSize: 4, page: 0 })
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BASE_URL}/api/table`).then((response) => {
+    axios.get('http://localhost:3001/api/table').then((response) => {
       setTableDatas(response.data);
     });
   }, []);

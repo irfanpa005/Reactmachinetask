@@ -23,7 +23,7 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BASE_URL}/api/pie-chart`).then((response) => {
+    axios.get('http://localhost:3001/api/pie-chart').then((response) => {
       setPieDatas(response.data);
     });
   }, []);
