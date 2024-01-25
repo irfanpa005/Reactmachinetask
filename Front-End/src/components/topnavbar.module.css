@@ -4,12 +4,18 @@
     justify-content: space-between;
     padding: 1rem 1rem;
     background-color: transparent;
+    z-index: 6;
 }
 
 .navIcon{
     display: none;
+    z-index: 6;
 }
 
+.goodMorning{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
 .userDetails{
     display: flex;
@@ -18,12 +24,17 @@
     border-radius: 10px;
 }
 
-.userDetails h5,h6{
+.userName{
+    font-weight: 600;
+}
+
+.userDetails p{
     margin: 2px;
     padding: 0;
     margin: 0;
     margin-right: 5px;
 }
+
 
 .userDetails img{
     margin-left: 4px;
@@ -33,6 +44,11 @@
     .mainContent {
       margin-left: 0rem;
     }
+
+    .goodMorning{
+        font-size: 1rem;
+    }
+    
 
     .navIcon{
         display: block;

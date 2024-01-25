@@ -10,7 +10,6 @@ function Tabledata() {
   useEffect(() => {
     axios.get(`${import.meta.env.VITE_BASE_URL}/api/table`).then((response) => {
       setTableDatas(response.data);
-      console.log(response.data);
     });
   }, []);
 
