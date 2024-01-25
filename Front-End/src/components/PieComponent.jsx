@@ -31,7 +31,7 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
   return (
     <div className={styles.pieContainer}>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%">
         <PieChart width={200} height={400}>
           <Pie
             data={pieDatas}
@@ -48,13 +48,13 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
           </Pie>
           <Legend
               verticalAlign="bottom"
+              layout='vertical'
               height={72}
+              align='center'
               formatter={(value, entry, index) => (
-  
                   <span style={{ color: 'black', fontSize: '15px'}}>
                     {pieDatas[index].label}
                   </span>
-       
               )}
             />
         </PieChart>

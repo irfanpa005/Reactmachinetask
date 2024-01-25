@@ -22,7 +22,7 @@ function Dashboard() {
         <SideNavbar />
       </div> }
       <div className={styles.mainContent}>
-        <div className='topNavbar'>
+        <div className={styles.topNavbar}>
           <TopNavbar isSideBarOpen={isSideBarOpen} setisSideBarOpen={setIsSideBarOpen}/>
         </div>
         <div className={styles.dataContents}>
@@ -30,20 +30,19 @@ function Dashboard() {
             <div className={`${styles.graphCol} col-md-8 col-12`}>
               <Graph />
             </div>
-            <div className={`${styles.pieCol} col-md-3 col-12`}>
-             <PieComponent />
+            <div className={`${styles.pieCol} col-md-4 col-10`}>
+              <PieComponent />
             </div>
           </div>
           <br></br>
-          <div className='row align-items-start'>
+          <div className='row'>
             <div className={`${styles.tableCol} col-md-9 col-12`}>
               <Tabledata />
             </div>
-            <div className={`${styles.profCol} col-md-2 col-12`}>
+            <div className={`${styles.profCol} col-md-3 col-10`}>
              <Profile />
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </div>

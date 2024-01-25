@@ -10,45 +10,61 @@
   }
 
   .topNavbar{
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
   }
   
   .dataContents{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
-  
+
   .graphCol{
     width: 100%;
     min-height: 300px;
-    margin: 0.5rem 0.5rem;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .pieCol{
     width: 100%;
-    margin: 0.5rem 0.5rem;
+    min-height: 350px;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .tableCol{
     width: 100%;
     height: 350px;
-    margin: 0.5rem 0.5rem;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .profCol{
-    width: 80%;
-    margin: 0.5rem 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .col-10{
+    margin: 0;
+    padding: 0;
   }
 
 
   @media screen and (max-width: 650px) {
     .mainContent {
       margin-left: 0rem;
+    }
+
+    .pieCol{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
