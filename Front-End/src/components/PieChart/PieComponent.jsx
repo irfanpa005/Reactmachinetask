@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './pie.module.css'
 import { PieChart, Pie, Sector, Cell, Legend, ResponsiveContainer } from 'recharts';
 import axios from "axios";
-import { BaseUrl } from '../services';
+import { BaseUrl } from '../../services';
 
 function PieComponent() {
 const [pieDatas, setPieDatas] = useState([]);

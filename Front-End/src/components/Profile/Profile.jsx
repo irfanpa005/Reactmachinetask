@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './profile.module.css'
-import photo from '../assets/media.png'
-import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
-import twitter from '../assets/twitter.png'
+import photo from '../../assets/media.png'
+import facebook from '../../assets/facebook.png'
+import instagram from '../../assets/instagram.png'
+import twitter from '../../assets/twitter.png'
 
 function Profile() {
   return (

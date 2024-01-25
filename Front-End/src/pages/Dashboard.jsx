@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import SideNavbar from '../components/SideNavbar'
-import TopNavbar from '../components/TopNavbar'
-import Graph from '../components/Graph'
+import SideNavbar from '../components/SideNavbar/SideNavbar'
+import TopNavbar from '../components/TopNavbar/TopNavbar'
+import Graph from '../components/Graph/Graph'
 import styles from './dashboard.module.css'
-import PieComponent from '../components/PieComponent'
-import Profile from '../components/Profile'
-import Tabledata from '../components/Tabledata'
+import PieComponent from '../components/PieChart/PieComponent'
+import Profile from '../components/Profile/Profile'
+import Tabledata from '../components/Table/Tabledata'
 
 function Dashboard() {
 

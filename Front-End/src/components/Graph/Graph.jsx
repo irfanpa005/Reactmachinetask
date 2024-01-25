@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import axios from "axios";
-import { BaseUrl } from "../services";
+import { BaseUrl } from "../../services";
 
 function Graph() {
   const [datas, setDatas] = useState([]);

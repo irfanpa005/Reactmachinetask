@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './sidenavbar.module.css'
-import briefcase from '../assets/Briefcase.png'
-import shutdown from '../assets/Shutdown.png'
-import circlemenu from '../assets/Circled Menu.png'
-import support from '../assets/Support.png'
-import puzzle from '../assets/Puzzle.png'
-import help from '../assets/Help.png'
+import briefcase from '../../assets/Briefcase.png'
+import shutdown from '../../assets/Shutdown.png'
+import circlemenu from '../../assets/Circled Menu.png'
+import support from '../../assets/Support.png'
+import puzzle from '../../assets/Puzzle.png'
+import help from '../../assets/Help.png'
 
 function SideNavbar() {
 

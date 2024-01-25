@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import styles from './topnavbar.module.css';
-import profilePic from '../assets/Rectangle 10.png'
-import NavIcon from '../assets/NavIcon';
-import CloseButton from '../assets/CloseButton';
-import NavIconW from '../assets/NavIconW';
+import profilePic from '../../assets/Rectangle 10.png'
+import NavIcon from '../../assets/NavIcon';
+import NavIconW from '../../assets/NavIconW';
 
 function TopNavbar({isSideBarOpen, setisSideBarOpen}) {
   const [closeButton, setCloseButton] = useState(false);

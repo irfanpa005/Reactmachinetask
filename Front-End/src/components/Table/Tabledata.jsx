@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./table.module.css";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
-import { BaseUrl } from "../services";
+import { BaseUrl } from "../../services";
 
 function Tabledata() {
   const [tableDatas, setTableDatas] = useState([]);
