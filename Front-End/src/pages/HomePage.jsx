@@ -28,17 +28,17 @@ function HomePage() {
         </div>
       )}
       <div className={styles.rightSide}>
-      <div className={styles.topNavbar}>
-        <TopNavbar
-          isSideBarOpen={isSideBarOpen}
-          setisSideBarOpen={setIsSideBarOpen}
-        />
-      </div>
-        <div className={styles.mainContent}>
-          <Suspense>
-            <Outlet />
-          </Suspense>
+        <div className={styles.topNavbar}>
+          <TopNavbar
+            isSideBarOpen={isSideBarOpen}
+            setisSideBarOpen={setIsSideBarOpen}
+          />
         </div>
+          <div className={styles.mainContent}>
+            <Suspense>
+              <Outlet />
+            </Suspense>
+          </div>
       </div>
     </div>
   );
