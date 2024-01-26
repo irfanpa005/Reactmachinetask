@@ -7,13 +7,16 @@ import support from "../../assets/Support.png";
 import puzzle from "../../assets/Puzzle.png";
 import help from "../../assets/Help.png";
 import statboard from "../../assets/StatBoard.png";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function SideNavbar() {
+  const navigateTo = useNavigate();
+  const location = useLocation();
   const sideButtons = [
-    { icon: circlemenu, title: "Dashboard" },
-    { icon: support, title: "Support" },
-    { icon: puzzle, title: "Plugins" },
-    { icon: help, title: "Help" },
+    { icon: circlemenu, title: "Dashboard", url: "dashboard" },
+    { icon: support, title: "Support", url: "support" },
+    { icon: puzzle, title: "Plugins", url: "plugins" },
+    { icon: help, title: "Help", url: "help" },
   ];
 
   return (
@@ -22,10 +25,16 @@ function SideNavbar() {
         <img src={briefcase} className={styles.brfCaseImg} />
         <img src={statboard} className={styles.brfCaseImg} />
       </div>
-      <div className={styles.sideNavButtons}>
+      <div className={styles.sideButtonsCont}>
         <ul>
           {sideButtons.map((button, index) => (
-            <li key={index}>
+            <li
+              className={location.pathname === `/${button.url}` ? styles.activeButton : styles.sideNavButtons}
+              key={index}
+              onClick={() => {
+                navigateTo(button.url);
+              }}
+            >
               <img src={button.icon}></img>
               <p>{button.title}</p>
             </li>
