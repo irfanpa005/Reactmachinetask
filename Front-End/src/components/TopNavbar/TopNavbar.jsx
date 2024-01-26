@@ -19,9 +19,9 @@ function TopNavbar() {
     <div className={styles.topNavbarContainer}>
       <p className={styles.goodMorning}>{getGreeting()} ! 😊</p>
       <div className={styles.userDetails}>
-        <div>
+        <div className={styles.profDetails}>
             <p className={styles.userName}>John Doe</p>
-            <p>john@doe.com</p>
+            <p className={styles.email}>john@doe.com</p>
         </div>
         <img src={profilePic}></img>
       </div>
