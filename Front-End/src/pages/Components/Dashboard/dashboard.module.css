@@ -1,35 +1,4 @@
-
-.mainPage{
-  display: flex;
-}
-
-.mainContent{
-    background-color: rgb(235, 231, 224);
-    width: 100%;
-    margin-left: 12rem;
-  }
-
-  .topNavbar{
-    /* position: fixed;
-    top: 0; */
-  }
-
-  .navIcon{
-    display: none;
-    z-index: 6;
-    background-color: transparent;
-    position: fixed;
-    top: 1.8rem;
-    left: 1rem;
-}
-  
-  .dataContents{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .graphCol{
+.graphCol{
     width: 100%;
     min-height: 300px;
     margin-right: auto;
@@ -67,23 +36,9 @@
 
 
   @media screen and (max-width: 650px) {
-    .mainContent {
-      margin-left: 0rem;
-    }
-
     .pieCol{
       width: 80%;
       margin-left: auto;
       margin-right: auto;
     }
-
-    .navIcon{
-      display: block;
-      z-index: 6;
-    }
-
-    .navIcon:hover{
-        cursor: pointer;
-    } 
-    
   }
