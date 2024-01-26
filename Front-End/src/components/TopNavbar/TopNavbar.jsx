@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './topnavbar.module.css';
 import profilePic from '../../assets/Rectangle 10.png'
 
-function TopNavbar({isSideBarOpen, setisSideBarOpen}) {
+function TopNavbar() {
   const [hour, setHour] = useState(new Date().getHours());
 
   const getGreeting = () => {

@@ -20,8 +20,7 @@ function HomePage() {
   return (
     <div className={styles.homePage}>
       <div className={styles.navIcon} onClick={toggleSidebar}>
-        {" "}
-        {isSideBarOpen ? <NavIconW /> : <NavIcon />}{" "}
+        {isSideBarOpen ? <NavIconW /> : <NavIcon />}
       </div>
       {isSideBarOpen && (
         <div className={styles.SideNavbar}>
@@ -29,10 +28,12 @@ function HomePage() {
         </div>
       )}
       <div className={styles.rightSide}>
+      <div className={styles.topNavbar}>
         <TopNavbar
           isSideBarOpen={isSideBarOpen}
           setisSideBarOpen={setIsSideBarOpen}
         />
+      </div>
         <div className={styles.mainContent}>
           <Suspense>
             <Outlet />

@@ -37,6 +37,7 @@ h3,h4{
     padding: 0;
     width: 100%;
     margin-left: 2vw;
+    
 }
 
 .sideNavButtons {
@@ -52,6 +53,7 @@ h3,h4{
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .activeButton{
@@ -67,6 +69,7 @@ h3,h4{
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     font-size: 12px;
+    margin-bottom: 8px;
 }
 
 .sideNavButtons p,.sideNavButtons img, .activeButton p, .activeButton img{
@@ -95,6 +98,11 @@ h3,h4{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+.logout:hover {
+    cursor: pointer;
+    color: rgb(106, 17, 17);
   }
   
   .logout p {
