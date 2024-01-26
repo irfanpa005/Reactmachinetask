@@ -25,7 +25,7 @@ function HomePage() {
       </div>
       {isSideBarOpen && (
         <div className={styles.SideNavbar}>
-          <SideNavbar />
+          <SideNavbar setSideBar={setIsSideBarOpen}/>
         </div>
       )}
       <div className={styles.rightSide}>

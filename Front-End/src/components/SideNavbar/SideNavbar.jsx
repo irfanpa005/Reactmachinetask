@@ -9,9 +9,10 @@ import help from "../../assets/Help.png";
 import statboard from "../../assets/StatBoard.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
-function SideNavbar() {
+function SideNavbar({setSideBar}) {
   const navigateTo = useNavigate();
   const location = useLocation();
+  const screenWidth = window.innerWidth;
   const sideButtons = [
     { icon: circlemenu, title: "Dashboard", url: "dashboard" },
     { icon: support, title: "Support", url: "support" },
@@ -33,6 +34,9 @@ function SideNavbar() {
               key={index}
               onClick={() => {
                 navigateTo(button.url);
+                if (screenWidth < 650) {
+                  setSideBar(false);
+                }
               }}
             >
               <img src={button.icon}></img>
