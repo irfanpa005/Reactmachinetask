@@ -4,6 +4,7 @@ import TopNavbar from "../components/TopNavbar/TopNavbar";
 import styles from "./home.module.css";
 import NavIcon from "../assets/NavIcon";
 import NavIconW from "../assets/NavIconW";
+import CloseButton from "../assets/CloseButton";
 import { Outlet } from "react-router-dom";
 
 function HomePage() {
@@ -20,7 +21,7 @@ function HomePage() {
   return (
     <div className={styles.homePage}>
       <div className={styles.navIcon} onClick={toggleSidebar}>
-        {isSideBarOpen ? <NavIconW /> : <NavIcon />}
+        {isSideBarOpen ? <CloseButton /> : <NavIcon />}
       </div>
       {isSideBarOpen && (
         <div className={styles.sideNavbar}>

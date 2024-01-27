@@ -58,6 +58,16 @@
 
     .sideNavbar{
       width: 100vw;
+      animation: slideFromLeft 0.4s ease;
+    }
+
+    @keyframes slideFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
     
     .rightSide {
