@@ -21,7 +21,7 @@ function Dashboard() {
           <Tabledata />
         </div>
         <div className={`${styles.profCol} col-md-3 col-12`}>
-          <Profile />
+          <div className={styles.profELement}><Profile /></div>
         </div>
       </div>
     </div>
