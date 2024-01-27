@@ -6,10 +6,15 @@ import Dashboard from './pages/Components/Dashboard/Dashboard';
 import Support from './pages/Components/Support/Support';
 import Help from './pages/Components/Help/Help';
 import Plugins from './pages/Components/Plugins/Plugins';
+import Error from './components/Error/Error';
 
 function App() {
 
   const router = createBrowserRouter([
+    {
+      path:"*",
+      element:<Error />
+    },
     {
       path:"/",
       element: <HomePage />,
@@ -21,6 +26,7 @@ function App() {
         {path:"help", element: <Help />},
       ]
     }
+
   ])
 
   return (

@@ -34,7 +34,7 @@ function SideNavbar({setSideBar}) {
               key={index}
               onClick={() => {
                 navigateTo(button.url);
-                if (screenWidth < 650) {
+                if (screenWidth < 768) {
                   setSideBar(false);
                 }
               }}
