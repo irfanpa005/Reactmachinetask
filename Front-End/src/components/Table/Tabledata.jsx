@@ -5,13 +5,20 @@ import axios from "axios";
 import { BaseUrl } from "../../services";
 
 function Tabledata() {
-  const [tableDatas, setTableDatas] = useState([]);
+  const [tableDatas, setTableDatas] = useState([{"id":"null","name":"null","quantity":"null","price":"null"}]);
   const [paginationModel, setPaginationModel] = useState({ pageSize: 4, page: 0 })
 
-  useEffect(() => {
-    axios.get(`${BaseUrl}/api/table`).then((response) => {
+  const getTableData = async () => {
+    try {
+      const response = await axios.get(`${BaseUrl}/api/table`);
       setTableDatas(response.data);
-    });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getTableData();
   }, []);
 
   const columns = [

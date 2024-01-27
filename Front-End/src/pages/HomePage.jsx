@@ -6,6 +6,7 @@ import NavIcon from "../assets/NavIcon";
 import NavIconW from "../assets/NavIconW";
 import CloseButton from "../assets/CloseButton";
 import { Outlet } from "react-router-dom";
+import Loader from "../assets/Loader";
 
 function HomePage() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
@@ -36,7 +37,7 @@ function HomePage() {
           />
         </div>
           <div className={styles.mainContent}>
-            <Suspense>
+            <Suspense fallback={Loader}>
               <Outlet />
             </Suspense>
           </div>

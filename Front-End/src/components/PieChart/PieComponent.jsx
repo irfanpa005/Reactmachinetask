@@ -5,7 +5,7 @@ import axios from "axios";
 import { BaseUrl } from '../../services';
 
 function PieComponent() {
-const [pieDatas, setPieDatas] = useState([]);
+const [pieDatas, setPieDatas] = useState([{"label":"no data","value":"no data"}]);
 
 const COLORS = ['#3bbf5e', '#63d481', '#9dcfaa', '#c5decc', '#509481'];
 
@@ -22,11 +22,17 @@ const y = cy + radius * Math.sin(-midAngle * RADIAN);
   );
 };
 
+const getpieDatas = async () => {
+  try {
+    const response = await axios.get(`${BaseUrl}/api/pie-chart`);
+    setPieDatas(response.data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+};
 
   useEffect(() => {
-    axios.get(`${BaseUrl}/api/pie-chart`).then((response) => {
-      setPieDatas(response.data);
-    });
+    getpieDatas();
   }, []);
 
 

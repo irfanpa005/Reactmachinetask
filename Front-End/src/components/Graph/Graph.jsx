@@ -14,22 +14,28 @@ import axios from "axios";
 import { BaseUrl } from "../../services";
 
 function Graph() {
-  const [datas, setDatas] = useState([]);
+  const [graphDatas, setgraphDatas] = useState([{"x":"no data","y":"no data"}]);
+
+const getGraphData = async () => {
+  try {
+    const response = await axios.get(`${BaseUrl}/api/graph`);
+    setgraphDatas(response.data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+};
 
   useEffect(() => {
-    axios.get(`${BaseUrl}/api/graph`).then((response) => {
-      setDatas(response.data);
-    });
+    getGraphData();
   }, []);
 
   return (
     <div className={styles.graphContainer}>
-  
     <ResponsiveContainer width="100%" height="100%" className="mx-auto my-auto">
           <LineChart
             width={500}
             height={300}
-            data={datas}
+            data={graphDatas}
             bg-primary
           >
             <CartesianGrid strokeDasharray="3 3" />
