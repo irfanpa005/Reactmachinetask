@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+.sideNavbar{
+ width: 12rem;     
+}
+
 .rightSide{
     background-color: rgb(235, 231, 224);
     /* margin-left: 12rem; */
@@ -21,7 +25,7 @@
     z-index: 6;
     background-color: transparent;
     position: fixed;
-    top: 1.8rem;
+    top: 1.4rem;
     left: 1rem;
 }
   
@@ -32,12 +36,22 @@
   }
 
 
+  @media screen and (max-width: 850px) {
+    .sideNavbar{
+      width: fit-content;
+    }
 
-  @media screen and (max-width: 650px) {
+    .mainContent{
+      width: 96%;
+    }
+  
+  }
+
+  @media screen and (max-width: 768px) {
     .mainContent{
       margin-top: 7rem;
-    }  
-
+    }
+    
     .rightSide {
       margin-left: 0rem;
     }

@@ -10,7 +10,7 @@ function HomePage() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
 
   useEffect(() => {
-    window.innerWidth < 650 ? setIsSideBarOpen(false) : setIsSideBarOpen(true);
+    window.innerWidth < 768 ? setIsSideBarOpen(false) : setIsSideBarOpen(true);
   }, []);
 
   const toggleSidebar = () => {
@@ -23,7 +23,7 @@ function HomePage() {
         {isSideBarOpen ? <NavIconW /> : <NavIcon />}
       </div>
       {isSideBarOpen && (
-        <div className={styles.SideNavbar}>
+        <div className={styles.sideNavbar}>
           <SideNavbar setSideBar={setIsSideBarOpen}/>
         </div>
       )}
@@ -39,6 +39,7 @@ function HomePage() {
               <Outlet />
             </Suspense>
           </div>
+          
       </div>
     </div>
   );

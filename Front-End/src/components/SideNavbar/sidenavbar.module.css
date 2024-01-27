@@ -1,7 +1,6 @@
 .sideNavContainer{
     background-color: rgb(49, 37, 65);
     /* min-width: fit-content; */
-    width: 12rem;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -106,7 +105,7 @@ h3,h4{
   }
 
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     .sideNavContainer{
         width: 100%;
     }
@@ -118,7 +117,6 @@ h3,h4{
         margin-left: 0vw;
     }
     
-
     .sideNavButtons li{
         justify-content: start;
     }
