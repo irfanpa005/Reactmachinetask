@@ -20,12 +20,16 @@
     position: relative;
   }
 
+  .topNavbar{
+    padding: 1rem 2rem;
+  }
+
   .navIcon{
     display: none;
     z-index: 6;
     background-color: transparent;
     position: fixed;
-    top: 1.4rem;
+    top: 1.2rem;
     left: 1rem;
 }
   
@@ -51,6 +55,10 @@
     .mainContent{
       margin-top: 7rem;
     }
+
+    .sideNavbar{
+      width: 100vw;
+    }
     
     .rightSide {
       margin-left: 0rem;
@@ -67,11 +75,12 @@
     
     .topNavbar{
       position: fixed;
-      top: 0;
       width: 100%;
-      padding: 0;
-      background-color: rgb(235, 231, 224);
+      top: 0;
+      padding: 0.3rem 1rem 0.3rem 3rem;
       z-index: 2;
+      background-color: rgb(235, 231, 224);
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
     
   }
