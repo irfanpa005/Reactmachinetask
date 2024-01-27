@@ -1,9 +1,8 @@
 .graphCol{
     width: 100%;
-    min-height: 300px;
+    min-height: 350px;
     margin-right: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .pieCol{
@@ -11,35 +10,26 @@
     min-height: 350px;
     min-width: 200px;
     margin-left: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .tableCol{
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     margin-right: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
   }
 
   .profCol{
     width: 100%;
     margin-left: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: aqua;
   }
 
-  .col-10{
-    margin: 0;
-    padding: 0;
-  }
-
-
-  @media screen and (max-width: 650px) {
-    .pieCol{
-      width: 80%;
+  @media screen and (max-width: 768px) {
+    .pieCol, .graphCol, .tableCol{
       margin-left: auto;
       margin-right: auto;
     }
+
   }
