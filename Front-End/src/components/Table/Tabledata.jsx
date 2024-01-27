@@ -30,6 +30,7 @@ function Tabledata() {
 
   return (
     <div className={styles.tableContainer}>
+      <div className={styles.title}><p>Table</p></div>
       <DataGrid
         rows={tableDatas}
         columns={columns}

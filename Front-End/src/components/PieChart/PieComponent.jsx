@@ -38,6 +38,7 @@ const getpieDatas = async () => {
 
   return (
     <div className={styles.pieContainer}>
+      <div className={styles.title}><p>Pie Diagram</p></div>
       <ResponsiveContainer width="100%">
         <PieChart width={200} height={400}>
           <Pie
