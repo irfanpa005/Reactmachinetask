@@ -77,6 +77,16 @@
     .navIcon{
       display: block;
       z-index: 6;
+      animation: spiralAnimation 0.5s linear;
+    }
+
+    @keyframes spiralAnimation {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+      }
     }
 
     .navIcon:hover{
